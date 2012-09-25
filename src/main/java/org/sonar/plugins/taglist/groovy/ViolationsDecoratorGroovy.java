@@ -88,7 +88,6 @@ public class ViolationsDecoratorGroovy implements Decorator {
   }
 
   protected void saveFileMeasures(DecoratorContext context, Collection<Rule> rules) {
-    LOG.info("Saving measures..");
     CountDistributionBuilder distrib = new CountDistributionBuilder(taglistMetrics.getTagsDistribution());
     int mandatory = 0;
     int optional = 0;
